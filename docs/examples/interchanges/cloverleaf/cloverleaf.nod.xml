@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Two grade-separated mainlines: A is elevated at z=8 m, B is at z=0 m. -->
+<nodes>
+    <node id="A_W_in" x="-1000" y="-25" z="8" type="priority"/>
+    <node id="A_W_out" x="-1000" y="25" z="8" type="priority"/>
+    <node id="A_w_split" x="-450" y="-25" z="8" type="priority"/>
+    <node id="A_w_merge" x="-450" y="25" z="8" type="priority"/>
+    <node id="A_E_in" x="1000" y="25" z="8" type="priority"/>
+    <node id="A_E_out" x="1000" y="-25" z="8" type="priority"/>
+    <node id="A_e_split" x="450" y="25" z="8" type="priority"/>
+    <node id="A_e_merge" x="450" y="-25" z="8" type="priority"/>
+    <node id="B_S_in" x="25" y="-1000" z="0" type="priority"/>
+    <node id="B_S_out" x="-25" y="-1000" z="0" type="priority"/>
+    <node id="B_s_split" x="25" y="-450" z="0" type="priority"/>
+    <node id="B_s_merge" x="-25" y="-450" z="0" type="priority"/>
+    <node id="B_N_in" x="-25" y="1000" z="0" type="priority"/>
+    <node id="B_N_out" x="25" y="1000" z="0" type="priority"/>
+    <node id="B_n_split" x="-25" y="450" z="0" type="priority"/>
+    <node id="B_n_merge" x="25" y="450" z="0" type="priority"/>
+</nodes>
