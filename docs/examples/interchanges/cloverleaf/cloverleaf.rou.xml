@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- One-hour all-movement demand; adjust vehsPerHour after calibration. -->
+<routes>
+    <vType id="passenger" vClass="passenger" length="5.0" minGap="2.5" accel="2.6" decel="4.5" sigma="0.5" tau="1.0" maxSpeed="33.33" color="0,102,204"/>
+    <route id="W_E" edges="A_w_in A_e_mid A_e_out"/><route id="W_S" edges="A_w_in r_AW_BS B_s_out"/><route id="W_N" edges="A_w_in r_AW_BN B_n_out"/>
+    <route id="E_W" edges="A_e_in A_w_mid A_w_out"/><route id="E_N" edges="A_e_in r_AE_BN B_n_out"/><route id="E_S" edges="A_e_in r_AE_BS B_s_out"/>
+    <route id="S_N" edges="B_s_in B_n_mid B_n_out"/><route id="S_E" edges="B_s_in r_BS_AE A_e_out"/><route id="S_W" edges="B_s_in r_BS_AW A_w_out"/>
+    <route id="N_S" edges="B_n_in B_s_mid B_s_out"/><route id="N_W" edges="B_n_in r_BN_AW A_w_out"/><route id="N_E" edges="B_n_in r_BN_AE A_e_out"/>
+    <flow id="W_through" type="passenger" route="W_E" begin="0" end="3600" vehsPerHour="1100"/><flow id="W_to_S" type="passenger" route="W_S" begin="0" end="3600" vehsPerHour="160"/><flow id="W_to_N" type="passenger" route="W_N" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="E_through" type="passenger" route="E_W" begin="0" end="3600" vehsPerHour="1100"/><flow id="E_to_N" type="passenger" route="E_N" begin="0" end="3600" vehsPerHour="160"/><flow id="E_to_S" type="passenger" route="E_S" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="S_through" type="passenger" route="S_N" begin="0" end="3600" vehsPerHour="850"/><flow id="S_to_E" type="passenger" route="S_E" begin="0" end="3600" vehsPerHour="130"/><flow id="S_to_W" type="passenger" route="S_W" begin="0" end="3600" vehsPerHour="130"/>
+    <flow id="N_through" type="passenger" route="N_S" begin="0" end="3600" vehsPerHour="850"/><flow id="N_to_W" type="passenger" route="N_W" begin="0" end="3600" vehsPerHour="130"/><flow id="N_to_E" type="passenger" route="N_E" begin="0" end="3600" vehsPerHour="130"/>
+</routes>
