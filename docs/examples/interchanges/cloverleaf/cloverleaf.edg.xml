@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Full cloverleaf: four loop ramps carry the left-turn movements. -->
+<edges>
+    <edge id="A_w_in" from="A_W_in" to="A_w_split" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="A_e_mid" from="A_w_split" to="A_e_merge" numLanes="2" speed="27.78" priority="13" shape="-450,-25,8 450,-25,8"/>
+    <edge id="A_e_out" from="A_e_merge" to="A_E_out" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="A_e_in" from="A_E_in" to="A_e_split" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="A_w_mid" from="A_e_split" to="A_w_merge" numLanes="2" speed="27.78" priority="13" shape="450,25,8 -450,25,8"/>
+    <edge id="A_w_out" from="A_w_merge" to="A_W_out" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="B_s_in" from="B_S_in" to="B_s_split" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="B_n_mid" from="B_s_split" to="B_n_merge" numLanes="2" speed="27.78" priority="13" shape="25,-450,0 25,450,0"/>
+    <edge id="B_n_out" from="B_n_merge" to="B_N_out" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="B_n_in" from="B_N_in" to="B_n_split" numLanes="2" speed="27.78" priority="13"/>
+    <edge id="B_s_mid" from="B_n_split" to="B_s_merge" numLanes="2" speed="27.78" priority="13" shape="-25,450,0 -25,-450,0"/>
+    <edge id="B_s_out" from="B_s_merge" to="B_S_out" numLanes="2" speed="27.78" priority="13"/>
+
+    <edge id="r_AW_BS" from="A_w_split" to="B_s_merge" numLanes="1" speed="13.89" priority="7" shape="-450,-25,8 -620,-100,6 -650,-360,2 -500,-600,0 -180,-630,0 -25,-450,0"/>
+    <edge id="r_AW_BN" from="A_w_split" to="B_n_merge" numLanes="1" speed="16.67" priority="7" shape="-450,-25,8 -330,50,6 -120,230,1 25,450,0"/>
+    <edge id="r_AE_BN" from="A_e_split" to="B_n_merge" numLanes="1" speed="13.89" priority="7" shape="450,25,8 620,100,6 650,360,2 500,600,0 180,630,0 25,450,0"/>
+    <edge id="r_AE_BS" from="A_e_split" to="B_s_merge" numLanes="1" speed="16.67" priority="7" shape="450,25,8 330,-50,6 120,-230,1 -25,-450,0"/>
+    <edge id="r_BS_AE" from="B_s_split" to="A_e_merge" numLanes="1" speed="16.67" priority="7" shape="25,-450,0 100,-330,3 280,-120,7 450,-25,8"/>
+    <edge id="r_BS_AW" from="B_s_split" to="A_w_merge" numLanes="1" speed="13.89" priority="7" shape="25,-450,0 -100,-620,0 -360,-650,2 -600,-500,6 -630,-180,8 -450,25,8"/>
+    <edge id="r_BN_AW" from="B_n_split" to="A_w_merge" numLanes="1" speed="16.67" priority="7" shape="-25,450,0 -100,330,3 -280,120,7 -450,25,8"/>
+    <edge id="r_BN_AE" from="B_n_split" to="A_e_merge" numLanes="1" speed="13.89" priority="7" shape="-25,450,0 100,620,0 360,650,2 600,500,6 630,180,8 450,-25,8"/>
+</edges>
