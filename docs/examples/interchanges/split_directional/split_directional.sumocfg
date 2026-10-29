@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="split_directional.net.xml"/>
+        <route-files value="split_directional.rou.xml"/>
+    </input>
+    <time><begin value="0"/><end value="3600"/><step-length value="1"/></time>
+    <random_number><seed value="42"/></random_number>
+    <output>
+        <summary-output value="split_summary.xml"/>
+        <tripinfo-output value="split_tripinfo.xml"/>
+    </output>
+</configuration>
