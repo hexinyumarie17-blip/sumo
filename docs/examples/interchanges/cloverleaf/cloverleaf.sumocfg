@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="cloverleaf.net.xml"/>
+        <route-files value="cloverleaf.rou.xml"/>
+    </input>
+    <time><begin value="0"/><end value="3600"/><step-length value="1"/></time>
+    <random_number><seed value="42"/></random_number>
+    <output>
+        <summary-output value="cloverleaf_summary.xml"/>
+        <tripinfo-output value="cloverleaf_tripinfo.xml"/>
+    </output>
+</configuration>
