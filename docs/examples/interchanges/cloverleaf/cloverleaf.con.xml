@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Explicitly preserve exactly the 12 modeled origin-destination movements. -->
+<connections>
+    <connection from="A_w_in" to="A_e_mid"/><connection from="A_w_in" to="r_AW_BS"/><connection from="A_w_in" to="r_AW_BN"/>
+    <connection from="A_e_in" to="A_w_mid"/><connection from="A_e_in" to="r_AE_BN"/><connection from="A_e_in" to="r_AE_BS"/>
+    <connection from="B_s_in" to="B_n_mid"/><connection from="B_s_in" to="r_BS_AE"/><connection from="B_s_in" to="r_BS_AW"/>
+    <connection from="B_n_in" to="B_s_mid"/><connection from="B_n_in" to="r_BN_AW"/><connection from="B_n_in" to="r_BN_AE"/>
+    <connection from="A_e_mid" to="A_e_out"/><connection from="r_BS_AE" to="A_e_out"/><connection from="r_BN_AE" to="A_e_out"/>
+    <connection from="A_w_mid" to="A_w_out"/><connection from="r_BS_AW" to="A_w_out"/><connection from="r_BN_AW" to="A_w_out"/>
+    <connection from="B_n_mid" to="B_n_out"/><connection from="r_AW_BN" to="B_n_out"/><connection from="r_AE_BN" to="B_n_out"/>
+    <connection from="B_s_mid" to="B_s_out"/><connection from="r_AW_BS" to="B_s_out"/><connection from="r_AE_BS" to="B_s_out"/>
+</connections>
