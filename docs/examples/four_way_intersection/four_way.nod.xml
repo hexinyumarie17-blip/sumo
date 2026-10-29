@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Four approach legs meet at J0. Coordinates are in metres. -->
+<nodes>
+    <node id="north" x="0" y="300" type="priority"/>
+    <node id="south" x="0" y="-300" type="priority"/>
+    <node id="east" x="300" y="0" type="priority"/>
+    <node id="west" x="-300" y="0" type="priority"/>
+    <node id="J0" x="0" y="0" type="traffic_light"/>
+</nodes>
