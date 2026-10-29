@@ -9,9 +9,9 @@
         <end value="3600"/>
         <step-length value="1"/>
     </time>
-    <processing>
+    <random_number>
         <seed value="42"/>
-    </processing>
+    </random_number>
     <output>
         <summary-output value="summary.xml"/>
         <tripinfo-output value="tripinfo.xml"/>
