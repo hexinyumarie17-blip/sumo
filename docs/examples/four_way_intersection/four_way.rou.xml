@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Balanced 60-minute demand. Through, left and right movements are explicit. -->
+<routes>
+    <vType id="passenger" vClass="passenger" length="5.0" minGap="2.5"
+           accel="2.6" decel="4.5" sigma="0.5" tau="1.0" maxSpeed="13.89"
+           color="0,102,204"/>
+
+    <route id="N_to_S" edges="N_in S_out"/>
+    <route id="N_to_E" edges="N_in E_out"/>
+    <route id="N_to_W" edges="N_in W_out"/>
+    <route id="S_to_N" edges="S_in N_out"/>
+    <route id="S_to_W" edges="S_in W_out"/>
+    <route id="S_to_E" edges="S_in E_out"/>
+    <route id="E_to_W" edges="E_in W_out"/>
+    <route id="E_to_N" edges="E_in N_out"/>
+    <route id="E_to_S" edges="E_in S_out"/>
+    <route id="W_to_E" edges="W_in E_out"/>
+    <route id="W_to_S" edges="W_in S_out"/>
+    <route id="W_to_N" edges="W_in N_out"/>
+
+    <!-- per approach: 480 through + 120 left + 200 right = 800 veh/h -->
+    <flow id="N_through" type="passenger" route="N_to_S" begin="0" end="3600" vehsPerHour="480"/>
+    <flow id="N_left"    type="passenger" route="N_to_E" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="N_right"   type="passenger" route="N_to_W" begin="0" end="3600" vehsPerHour="200"/>
+    <flow id="S_through" type="passenger" route="S_to_N" begin="0" end="3600" vehsPerHour="480"/>
+    <flow id="S_left"    type="passenger" route="S_to_W" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="S_right"   type="passenger" route="S_to_E" begin="0" end="3600" vehsPerHour="200"/>
+    <flow id="E_through" type="passenger" route="E_to_W" begin="0" end="3600" vehsPerHour="480"/>
+    <flow id="E_left"    type="passenger" route="E_to_N" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="E_right"   type="passenger" route="E_to_S" begin="0" end="3600" vehsPerHour="200"/>
+    <flow id="W_through" type="passenger" route="W_to_E" begin="0" end="3600" vehsPerHour="480"/>
+    <flow id="W_left"    type="passenger" route="W_to_S" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="W_right"   type="passenger" route="W_to_N" begin="0" end="3600" vehsPerHour="200"/>
+</routes>
