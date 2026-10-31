@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Balanced 60-minute demand. Through, left and right movements are explicit. -->
+<!-- 60-minute channelised-junction demand. Through, left and right movements are explicit. -->
 <routes>
     <vType id="passenger" vClass="passenger" length="5.0" minGap="2.5"
            accel="2.6" decel="4.5" sigma="0.5" tau="1.0" maxSpeed="13.89"
@@ -18,17 +18,18 @@
     <route id="W_to_S" edges="W_in S_out"/>
     <route id="W_to_N" edges="W_in N_out"/>
 
-    <!-- per approach: 480 through + 120 left + 200 right = 800 veh/h -->
-    <flow id="N_through" type="passenger" route="N_to_S" begin="0" end="3600" vehsPerHour="480"/>
-    <flow id="N_left"    type="passenger" route="N_to_E" begin="0" end="3600" vehsPerHour="120"/>
-    <flow id="N_right"   type="passenger" route="N_to_W" begin="0" end="3600" vehsPerHour="200"/>
-    <flow id="S_through" type="passenger" route="S_to_N" begin="0" end="3600" vehsPerHour="480"/>
-    <flow id="S_left"    type="passenger" route="S_to_W" begin="0" end="3600" vehsPerHour="120"/>
-    <flow id="S_right"   type="passenger" route="S_to_E" begin="0" end="3600" vehsPerHour="200"/>
-    <flow id="E_through" type="passenger" route="E_to_W" begin="0" end="3600" vehsPerHour="480"/>
-    <flow id="E_left"    type="passenger" route="E_to_N" begin="0" end="3600" vehsPerHour="120"/>
-    <flow id="E_right"   type="passenger" route="E_to_S" begin="0" end="3600" vehsPerHour="200"/>
-    <flow id="W_through" type="passenger" route="W_to_E" begin="0" end="3600" vehsPerHour="480"/>
-    <flow id="W_left"    type="passenger" route="W_to_S" begin="0" end="3600" vehsPerHour="120"/>
-    <flow id="W_right"   type="passenger" route="W_to_N" begin="0" end="3600" vehsPerHour="200"/>
+    <!-- North/south: 900 through + 180 left + 220 right = 1,300 veh/h per approach. -->
+    <flow id="N_through" type="passenger" route="N_to_S" begin="0" end="3600" vehsPerHour="900"/>
+    <flow id="N_left"    type="passenger" route="N_to_E" begin="0" end="3600" vehsPerHour="180"/>
+    <flow id="N_right"   type="passenger" route="N_to_W" begin="0" end="3600" vehsPerHour="220"/>
+    <flow id="S_through" type="passenger" route="S_to_N" begin="0" end="3600" vehsPerHour="900"/>
+    <flow id="S_left"    type="passenger" route="S_to_W" begin="0" end="3600" vehsPerHour="180"/>
+    <flow id="S_right"   type="passenger" route="S_to_E" begin="0" end="3600" vehsPerHour="220"/>
+    <!-- East/west main arterial: 1,200 through + 220 left + 280 right = 1,700 veh/h. -->
+    <flow id="E_through" type="passenger" route="E_to_W" begin="0" end="3600" vehsPerHour="1200"/>
+    <flow id="E_left"    type="passenger" route="E_to_N" begin="0" end="3600" vehsPerHour="220"/>
+    <flow id="E_right"   type="passenger" route="E_to_S" begin="0" end="3600" vehsPerHour="280"/>
+    <flow id="W_through" type="passenger" route="W_to_E" begin="0" end="3600" vehsPerHour="1200"/>
+    <flow id="W_left"    type="passenger" route="W_to_S" begin="0" end="3600" vehsPerHour="220"/>
+    <flow id="W_right"   type="passenger" route="W_to_N" begin="0" end="3600" vehsPerHour="280"/>
 </routes>
